@@ -1,4 +1,4 @@
 riak-rails-authentication
 =========================
 
-This project id just for playing with Rails and Riak
+This project is just for playing with Rails and Riak
