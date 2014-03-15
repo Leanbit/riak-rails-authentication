@@ -1,0 +1,20 @@
+database:
+  nodes:
+    - host: "192.168.1.70"
+      http_port: 10018
+      pb_port: 10017
+    - host: "192.168.1.70"
+      http_port: 10028
+      pb_port: 10027
+    - host: "192.168.1.70"
+      http_port: 10038
+      pb_port: 10037
+    - host: "192.168.1.70"
+      http_port: 10048
+      pb_port: 10047
+    - host: "192.168.1.70"
+      http_port: 10058
+      pb_port: 10057
+  http_backend: "Excon"
+  protocol: "pbc"
+
