@@ -15,6 +15,5 @@ database:
     - host: "192.168.1.70"
       http_port: 10058
       pb_port: 10057
-  http_backend: "Excon"
-  protocol: "pbc"
-
+  # http_backend: "Excon"
+  # protocol: "pbc"
