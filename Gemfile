@@ -19,6 +19,9 @@ gem 'haml-rails', '0.4'
 ## General Purpose
 gem 'rails_config', '0.3.3'
 
+###
+## Web Server
+gem "puma"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
