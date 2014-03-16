@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    @user = User.find(params[:id])
+    @user = User.find_by_id(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
@@ -73,7 +73,7 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-    @user = User.find(params[:id])
+    @user = User.find_by_id(params[:id])
     @user.destroy
 
     respond_to do |format|

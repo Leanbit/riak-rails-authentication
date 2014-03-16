@@ -7,6 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= bootstrap_flash %>
+
+<%= link_to 'Logout', sessions_path, :method => :delete %>
+
 
 <%= yield %>
 
