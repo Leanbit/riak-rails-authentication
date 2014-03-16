@@ -34,8 +34,7 @@ class User
 
 
   def self.parse_from_riak(rkobject)
-    data = rkobject.data
-    new(data)
+    new(rkobject.data)
   end
 
 end
