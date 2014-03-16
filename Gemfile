@@ -7,6 +7,8 @@ gem 'rails', '3.2.17'
 # gem "excon", "~> 0.32.1" some problem in client configuration
 gem 'riak-client', '~> 1.0.3'
 gem 'strong_parameters', '0.2.1'
+gem "riak-sessions", git: "git@github.com:justsomedevelopers/riak-sessions.git"
+
 
 ###
 ## View
