@@ -40,7 +40,7 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    @user = User.new(params[:user])
+    @user = User.new(user_params)
 
     respond_to do |format|
       if @user.save
@@ -80,4 +80,10 @@ class UsersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  protected
+
+    def user_params
+      params.require(:user).permit(:name, :email, :password)
+    end
 end
