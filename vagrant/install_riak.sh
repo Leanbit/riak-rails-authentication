@@ -15,3 +15,7 @@ make devrel DEVNODES=5
 
 # change in devX/etc/app.config bind ip address to 0.0.0.0 (do not use this conf in prod)
 # change storage_backend to riak_kv_eleveldb_backend, that supports secondary index
+
+#Test Read read ab -r -n 1000 -c 20 http://localhost:3000/users
+#Test Write
+# ab -n 1 -c 5 -p user&name=giacomo -v 4 -T application/x-www-form-urlencoded "http://localhost:3000/users"

@@ -9,7 +9,7 @@
 <body>
 <%= bootstrap_flash %>
 
-<%= link_to 'Logout', sessions_path, :method => :delete %>
+<%= link_to 'Logout', sessions_path, :method => :delete if current_user %>
 
 
 <%= yield %>
