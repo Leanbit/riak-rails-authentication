@@ -1,4 +1,12 @@
 GIT
+  remote: git@github.com:justsomedevelopers/riak-cache.git
+  revision: 98c85a8d48cddb8715740c0e4ea63adfac82a36f
+  specs:
+    riak-cache (1.0.0)
+      activesupport (~> 3.0)
+      riak-client (~> 1.0.0)
+
+GIT
   remote: git@github.com:justsomedevelopers/riak-sessions.git
   revision: 3ea49c329a7a471839301755b1c6d32e0e6b0756
   specs:
@@ -150,6 +158,7 @@ DEPENDENCIES
   puma
   rails (= 3.2.17)
   rails_config (= 0.3.3)
+  riak-cache!
   riak-client (~> 1.0.3)
   riak-sessions!
   sass-rails (~> 3.2.3)

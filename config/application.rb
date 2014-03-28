@@ -64,5 +64,6 @@ module RiakRailsAuthentication
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    config.cache_store = [ :riak_store, {:nodes => YAML.load(File.open("config/settings/#{Rails.env}.yml").read)["database"]["nodes"].each(&:symbolize_keys!) } ]
   end
 end
