@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.17'
 
-### 
+###
 ## Database (excon as a faster HTTP Library)
 # gem "excon", "~> 0.32.1" some problem in client configuration
 gem 'riak-client', '~> 1.0.3'
@@ -23,6 +23,7 @@ gem 'rails_config', '0.3.3'
 ###
 ## Web Server
 gem "puma"
+gem 'rack-attack'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
